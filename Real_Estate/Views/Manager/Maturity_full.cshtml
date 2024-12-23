@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Maturity_full";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Pay Full Maturity</h2>
+    <!-- Form for Pay Full Maturity -->
+    <form id="payFullMaturityForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Customer ID or Name Field -->
+        <div class="mb-3">
+            <label for="customerId" class="form-label formLabel">Customer ID or Name:</label>
+            <!-- Corrected id and name attributes -->
+            <input type="text" class="form-control formInput" id="customerId" name="customerId" placeholder="Enter Customer ID or Name" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Search</button>
+        </div>
+    </form>
+</div>

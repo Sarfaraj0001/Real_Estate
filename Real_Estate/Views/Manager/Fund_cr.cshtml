@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Fund_cr";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Cheque Register Report</h2>
+    <!-- Form for Cheque Register Report -->
+    <form id="chequeRegisterForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Start Date Field -->
+        <div class="mb-3">
+            <label for="startDate" class="form-label formLabel">Enter Start Date:</label>
+            <input type="date" class="form-control formInput" id="startDate" name="startDate" placeholder="Enter Start Date" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Submit</button>
+        </div>
+    </form>
+</div>
+
+

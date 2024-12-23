@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Maturity_mpd";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Maturity Paid Details</h2>
+    <form id="maturityPaidForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Start Date Field -->
+        <div class="mb-3">
+            <label for="startDate" class="form-label formLabel">Start Date:</label>
+            <!-- Corrected id, name, and removed placeholder (not needed for date input) -->
+            <input type="date" class="form-control formInput" id="startDate" name="startDate" required>
+        </div>
+
+        <!-- End Date Field -->
+        <div class="mb-3">
+            <label for="endDate" class="form-label formLabel">End Date:</label>
+            <!-- Corrected id, name, and removed placeholder -->
+            <input type="date" class="form-control formInput" id="endDate" name="endDate" required>
+        </div>
+
+        <!-- View Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButton">View</button>
+        </div>
+    </form>
+</div>
+
+

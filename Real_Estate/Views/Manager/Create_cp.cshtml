@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Create_cp";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+@*<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>*@
+
+
+<div class="container bg-danger mt-5 FormContainer" >
+        <h2 class="text-center mb-4" >Create Collection Point</h2>
+        <form id="branchForm" class="p-4 rounded shadow formtag">
+     @*Branch Code*@
+    <div class="mb-3">
+        <label for="branchCode" class="form-label formLabel">Branch Code:</label>
+        <input type="text" class="form-control formInput" id="branchCode" placeholder="Enter Branch Code"required>
+    </div>
+     @*Collection Point Name*@
+    <div class="mb-3">
+        <label for="collectionPointName" class="form-label formLabel" >Collection Point Name:</label>
+        <input type="text" class="form-control formInput" id="collectionPointName" placeholder="Enter Collection Point Name"required>
+    </div>
+     @*Collection Point ID*@
+    <div class="mb-3">
+        <label for="collectionPointId" class="form-label formLabel" >Collection Point ID:</label>
+        <input type="text" class="form-control formInput" id="collectionPointId" placeholder="Enter Collection Point ID"required>
+    </div>
+     @*Mobile No*@
+    <div class="mb-3">
+        <label for="mobile" class="form-label formLabel">Mobile No:</label>
+        <input type="tel" class="form-control formInput" id="mobile" placeholder="Enter Mobile Number"required>
+    </div>
+     @*Email ID*@
+    <div class="mb-3">
+        <label for="email" class="form-label formLabel" >Email ID:</label>
+        <input type="email" class="form-control formInput" id="email" placeholder="Enter Email ID" required>
+    </div>
+     @*Date*@
+    <div class="mb-3">
+        <label for="date" class="form-label formLabel">Date:</label>
+        <input type="text" class="form-control formInput" id="date" placeholder="Enter Date" required>
+    </div>
+     @*Address*@
+    <div class="mb-3">
+        <label for="address" class="form-label formLabel">Address:</label>
+        <textarea class="form-control formInput" id="address" rows="3" placeholder="Enter Address" required></textarea>
+    </div>
+     @*Create Button*@
+    <div class="text-center d-grid gap-2">
+                <button type="submit" class="btn btn-lg formButtom">Create </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Set the current date and time as the placeholder
+        const dateInput = document.getElementById('date');
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleString(); // Format as per local date and time
+        dateInput.placeholder = formattedDate;
+        dateInput.value = formattedDate; // Optionally prefill the value
+    </script>
+

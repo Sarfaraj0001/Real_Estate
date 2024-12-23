@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Fund_btr";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Bank Transaction Report</h2>
+    <!-- Form for Agent KYC -->
+    <form id="agentKYCForm" class="border p-4 rounded shadow formtag">
+
+        <div class="mb-3">
+            <label class="form-label formLabel">Select Date Range:</label>
+            <div class="d-flex gap-3">
+                <div class="form-check mr-1">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentCash" value="Cash">
+                    <label class="form-check-label" for="paymentCash">Before One Day</label>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-check mr-1">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentDD" value="DD">
+                    <label class="form-check-label" for="paymentDD">Current Day</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Search</button>
+        </div>
+    </form>
+</div>
+

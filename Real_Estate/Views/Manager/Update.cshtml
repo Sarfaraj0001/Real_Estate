@@ -1,0 +1,267 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+
+<div class="container shado mt-5">
+    @*Heading*@
+
+    <div class="w-100  card-heading">
+        <h3 class="text-center  text-white pt-1 pb-1">Update</h3>
+    </div>
+    @*Cards Section*@
+    <div class="row cardStyle g-3 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Update_cp" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/map.png" class="imageSize img-fluid" alt="Collection Point" />
+                    <h6 class="card-title mt-1 mb-0 ">Collection Point</h6>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Update_customer" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/client.png" class="imageSize img-fluid" alt="Customer" />
+                    <h6 class="card-title mt-1 mb-0">Customer</h6>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Update_amn" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/mobile.png" class="imageSize img-fluid" alt="Associate Mobile No" />
+                    <h6 class="card-title mt-1 mb-0">Associate Mobile No</h6>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Update_cmn" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/mobile.png" class="imageSize img-fluid" alt="Customer Mobile No" />
+                    <h6 class="card-title mt-1 mb-0">Customer Mobile No</h6>
+                </div>
+            </a>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Update_Akyc" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/kyc.png" class="imageSize img-fluid" alt="Agent KYC" />
+                    <h6 class="card-title mt-1 mb-0">Agent KYC</h6>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Printing_pc" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/kyc.png" class="imageSize img-fluid" alt="Agent KYC" />
+                    <h6 class="card-title mt-1 mb-0">Agent KYC</h6>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<!--<style>
+    .create_logo_img {
+        height: 64px;
+        width: 64px;
+    }
+
+    .custom-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-decoration: none;
+        color: inherit; /* Keeps the original text color */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .custom-card:hover {
+            transform: translateY(-5px); /* Lifts the card slightly */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .custom-card .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+</style>
+
+<div class="container mt-5">-->
+@*Cards Row*@
+<!--<div class="row g-3">
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateBranch" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/location-pin.png" />
+                    <h5 class="card-title mt-3">Branch</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateCollectionPoint" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/map.png" />
+                    <h5 class="card-title mt-3">Collection Point</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateHr" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/hr.png" />
+                    <h5 class="card-title mt-3">Hr</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateProjectCategory" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/clipboard.png" />
+                    <h5 class="card-title mt-3">Project Category</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateNewProject" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/new-project.png" />
+                    <h5 class="card-title mt-3">New Project</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateNewPhase" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/moon.png" />
+                    <h5 class="card-title mt-3">New Phase</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateNewBlock" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/cubes.png" />
+                    <h5 class="card-title mt-3">New Block</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateNewLevel" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/next-level.png" />
+                    <h5 class="card-title mt-3">Level</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateFCommision" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/commission.png" />
+                    <h5 class="card-title mt-3">Fill Commission</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateFSCommision" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/commission (1).png" />
+                    <h5 class="card-title mt-3">Fill Spot Commission</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateExpenseHead" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/accountant.png" />
+                    <h5 class="card-title mt-3">Expense Head</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateRelation" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/handshake.png" />
+                    <h5 class="card-title mt-3">Relation</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateLateFine" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/fine.png" />
+                    <h5 class="card-title mt-3">Set Late Fine & Tds</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/AddExpense" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/budget.png" />
+                    <h5 class="card-title mt-3">Add Expense</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/AddBonus" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/bonus.png" />
+                    <h5 class="card-title mt-3">Add Bonus</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateStateCity" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/cityscape.png" />
+                    <h5 class="card-title mt-3">Add State-City</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateAddBank" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/bank.png" />
+                    <h5 class="card-title mt-3">Add Bank</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateIdCard" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/id-card.png" />
+                    <h5 class="card-title mt-3">Id Card (One)</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateIdCardAll" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/id-card (1).png" />
+                    <h5 class="card-title mt-3">Id Card (All)</h5>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+            <a href="~/Home/CreateLaunchSchema" class="custom-card text-center h-100">
+                <div class="card-body">
+                    <img class="create_logo_img" src="~/Create_logos/diagram.png" />
+                    <h5 class="card-title mt-3">Launch Schema</h5>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>-->

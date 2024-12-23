@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewBag.Title = "Update_amn";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+
+<div class="index_body mt-5">
+    <div class="table-container">
+        <div class="header-row">Total Collection</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Associate ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>PAN No</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td>AANGANHOMES0000-1</td>
+                    <td>AANGANHOMES</td>
+                    <td class="mobile">7408579797</td>
+                    <td class="panno">AACCO3984A</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A02</td>
+                    <td>Tanvi Qureshi</td>
+                    <td class="mobile">8601999000</td>
+                    <td class="panno">Erhps2354g</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A03</td>
+                    <td>Rashmi Singh</td>
+                    <td class="mobile">7880348888</td>
+                    <td class="panno">Erhps4521h</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A04</td>
+                    <td>ANSHU TRIPATHI</td>
+                    <td class="mobile">9919378699</td>
+                    <td class="panno">ERHPS4589J</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A05</td>
+                    <td>SAVITRI SHARMA</td>
+                    <td class="mobile">9935078066</td>
+                    <td class="panno">ERHPS4589J</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A06</td>
+                    <td>SATYAM TRIPATHI</td>
+                    <td class="mobile">9919378199</td>
+                    <td class="panno">ghrps6309j</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A07</td>
+                    <td>MANOJ PANDEY</td>
+                    <td class="mobile">9369475746</td>
+                    <td class="panno">ERHPS5633J</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A08</td>
+                    <td>AMIT SACHDEVA</td>
+                    <td class="mobile">9696525805</td>
+                    <td class="panno">rthps4567j</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A09</td>
+                    <td>Shishir Kumar Singh</td>
+                    <td class="mobile">7905225161</td>
+                    <td class="panno">ERHPS6583J</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AH-001/A10</td>
+                    <td>Abhishek Kumarajaa</td>
+                    <td class="mobile">9965854502</td>
+                    <td class="panno">JKNPK4177G</td>
+                    <td>
+                        <button class="btn btn-primary btn-sm edit-btn">Edit</button>
+                        <button class="btn btn-secondary btn-sm cancel-btn d-none">Cancel</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tableBody = document.getElementById("tableBody");
+
+            tableBody.addEventListener("click", (event) => {
+                if (event.target.classList.contains("edit-btn")) {
+                    const row = event.target.closest("tr");
+                    toggleEditMode(row, true);
+                } else if (event.target.classList.contains("cancel-btn")) {
+                    const row = event.target.closest("tr");
+                    toggleEditMode(row, false);
+                }
+            });
+
+            // Function to toggle edit mode
+            function toggleEditMode(row, isEditing) {
+                const mobileCell = row.querySelector(".mobile");
+                const panCell = row.querySelector(".panno");
+                const editBtn = row.querySelector(".edit-btn");
+                const cancelBtn = row.querySelector(".cancel-btn");
+
+                if (isEditing) {
+                    // Save initial values
+                    row.dataset.initialMobile = mobileCell.textContent;
+                    row.dataset.initialPan = panCell.textContent;
+
+                    // Make fields editable
+                    mobileCell.innerHTML = `<input type="text" class="form-control" value="${mobileCell.textContent}">`;
+                    panCell.innerHTML = `<input type="text" class="form-control" value="${panCell.textContent}">`;
+
+                    // Show Cancel button
+                    editBtn.textContent = "Save";
+                    cancelBtn.classList.remove("d-none");
+                } else {
+                    // Revert to initial values
+                    mobileCell.textContent = row.dataset.initialMobile;
+                    panCell.textContent = row.dataset.initialPan;
+
+                    // Hide Cancel button
+                    editBtn.textContent = "Edit";
+                    cancelBtn.classList.add("d-none");
+                }
+            }
+        });
+    </script>
+
+
+
+

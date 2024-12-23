@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Maturity_idf";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Issue Discharge Form</h2>
+    <!-- Form for Issue Discharge -->
+    <form id="issueDischargeForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Customer ID Field -->
+        <div class="mb-3">
+            <label for="customerId" class="form-label formLabel">Customer Id:</label>
+            <input type="text" class="form-control formInput" id="customerId" name="customerId" placeholder="Enter Customer Id" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Download PDF</button>
+        </div>
+    </form>
+</div>
+
+

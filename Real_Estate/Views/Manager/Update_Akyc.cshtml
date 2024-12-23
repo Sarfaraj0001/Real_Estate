@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Update_Akyc";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Agent KYC</h2>
+    <!-- Form for Agent KYC -->
+    <form id="agentKYCForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Agent ID or Name Field -->
+        <div class="mb-3">
+            <label for="agentIdOrName" class="form-label formLabel">Enter Agent ID or Name:</label>
+            <input type="text" class="form-control formInput" id="agentIdOrName" name="agentIdOrName" placeholder="Enter Agent ID or Name" required>
+        </div>
+
+        <!-- Search Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Search</button>
+        </div>
+    </form>
+</div>
+
+

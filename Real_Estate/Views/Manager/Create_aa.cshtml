@@ -1,0 +1,171 @@
+﻿
+@{
+    ViewBag.Title = "Create_aa";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Add Expense</h2>
+    <form id="branchForm" class="border p-4 rounded shadow formtag">
+
+
+
+        <!-- Select section -->
+        <div class="mb-3">
+            <label for="gender" class="form-label formLabel">Select Type:</label>
+            <select class="form-control formInput" id="g" required>
+                <option value="" disabled selected>Select</option>
+                <option>Basic salary </option>
+                <option>Bonus </option>
+                <option>Incentive to Staff </option>
+                <option>House Rent Allowance </option>
+                <option>Transport Allowance </option>
+                <option>Recruitment Expenses </option>
+                <option>Telephone expenses reimbursement </option>
+                <option>Staff Welfare (In office) </option>
+                <option>Staff Welfare (Out of office) </option>
+                <option>Staff Insurance </option>
+                <option>Festival Expenses </option>
+                <option>Rates &amp; Taxes </option>
+                <option>Conveyance Expenses (Others) </option>
+                <option>Conveyance Expenses (To and fro residence) </option>
+                <option>Travelling Expenses -Domestic </option>
+                <option>Travelling Expenses -Foreign </option>
+                <option>Cellular Phone Expenses </option>
+                <option>Telephone Expenses </option>
+                <option>Courier Expenses </option>
+                <option>Postage, Courier &amp; Telegram Expenses </option>
+                <option>Internet subscription fee </option>
+                <option>Printing &amp; Stationery </option>
+                <option>Vehicle insurance (Non commercial) </option>
+                <option>Vehicle insurance (Commercial) </option>
+                <option>	Office Rent </option>
+                <option>Guest House Rent </option>
+                <option>Legal &amp; Professional Charges </option>
+                <option>Consultancy Charges </option>
+                <option>Software  Expenses </option>
+                <option>Fees &amp; Subscription (Charges paid to Notary public for attestation of any document) </option>
+                <option>Security Expenses </option>
+                <option>Newpapers, Books &amp; Periodicals Expenses </option>
+                <option>Meeting &amp; Conference Expenses </option>
+                <option>Advertisement Expenses </option>
+                <option>Vehicle Petrol Expenses- Non commercial </option>
+                <option>Vehicle Petrol Expenses- Commercial </option>
+                <option> Car Expenses </option>
+                <option>Business Promotion Expenses </option>
+                <option>Expenses of snacks, lunch, dinner with client/customer. </option>
+                <option>Office Expenses </option>
+                <option>Electricity &amp; Generator Expenses </option>
+                <option>Repair &amp; Maintenance- Plant &amp; Machinery </option>
+                <option>Vehicle Maintenance (Non commercial) </option>
+                <option> Vehicle Maintenance (Commerical) </option>
+                <option>Repair &amp; Maintenance - Others </option>
+                <option>Computer maintenance / Computer expenses /  Repair and maint- Computers </option>
+                <option>Bank Charges </option>
+                <option>Loss on Sale of Fixed Assets </option>
+                <option>Donation </option>
+                <option>Audit expenses  </option>
+                <option>Finance charges </option>
+                <option>Office equipment </option>
+                <option>Agent commision </option>
+                <option>Coffee Machine rent </option>
+                <option>Vehicle Diesel Expenses- Non commercial </option>
+                <option>Vehicle Diesel Expenses- commercial </option>
+                <option>Vehicle Diesel/Petrol Expenses-for associate </option>
+                <option>TOLL TAX </option>
+                <option>Associate advance </option>
+                <option>Employee Advance </option>
+                <option>Advance Payment </option>
+                <option>Booking Cancellation </option>
+                <option>VEHICLE SERVICE </option>
+                <option>   Vehicle Booking </option>
+                <option>Registry  Fees &amp; Expencess  </option>
+                <option>Payment of  land seller  </option>
+                <option>Reward &amp; Recognition Expencess  </option>
+                <option>TDS  </option>
+                <option>Building Material (Bricks,Cement Etc.) </option>
+                <option>Broker Commission </option>
+                <option>Miscellaneous </option>
+                <option>Office Meeting Expenses of snacks, lunch, dinner with client/customer/associate  </option>
+                <option>Plot Cancellation </option>
+                <option>Advance TAX </option>
+                <option>Associate salary </option>
+                <option>site development labour payment </option>
+                <option>Architect payment </option>
+                <option> Vehicle Diesel Expenses for Associate on Booking  </option>
+                <option>Underwrite </option>
+                <option>site Construction Work </option>
+                <option>For Booking Land / Space  </option>
+                <option>Soil Stuffing </option>
+                <option>Flat Rent </option>
+                <option>Furniture Purchase  </option>
+                <option>CUSTOMER LEASE RENT  </option>
+                <option>LEASE RENT </option>
+                <option>Customer Bank EMI Intrest </option>
+                <option> Vehicle EMI   Non commercial </option>
+                <option>Customer EMI Holiday  </option>
+                <option>Term / Business Loan </option>
+                <option>abc </option>
+
+
+            </select>
+        </div>
+
+        <!-- Select section -->
+        <div class="mb-3">
+            <label for="gender" class="form-label formLabel">Select Type:</label>
+            <select class="form-control formInput" id="g" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Male">Payment</option>
+                <option value="Female">Recive</option>
+            </select>
+        </div>
+
+        <!-- Booking Amount -->
+        <div class="mb-3">
+            <label for="bookingAmount" class="form-label formLabel">Enter Amount:</label>
+            <input type="text" class="form-control formInput" id="bookingAmount" placeholder="Enter Amount" required>
+        </div>
+
+        <!-- Payment Mode -->
+        <div class="mb-3">
+            <label class="form-label formLabel">Payment Mode:</label>
+            <div class="d-flex gap-3">
+
+                <div class="form-check mr-1">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentCash" value="Cash">
+                    <label class="form-check-label" for="paymentCash">Cash</label>
+                </div>
+                <div class="form-check mr-1">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentDD" value="DD">
+                    <label class="form-check-label" for="paymentDD">DD</label>
+                </div>
+                <div class="form-check mr-1">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentCheque" value="Cheque">
+                    <label class="form-check-label" for="paymentCheque">Cheque</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMode" id="paymentBankTransaction" value="Bank Transaction">
+                    <label class="form-check-label" for="paymentBankTransaction">Bank Transaction</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Remark -->
+        <div class="mb-3">
+            <label for="remark" class="form-label formLabel">Remark:</label>
+            <input type="text" class="form-control formInput" id="remark" placeholder="Add Remark" required>
+        </div>
+
+        <!-- date -->
+        <div class="mb-3">
+            <label for="remark" class="form-label formLabel">Select Date:</label>
+            <input type="text" class="form-control formInput" id="remark" required>
+        </div>
+        <!-- Create Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">View</button>
+        </div>
+    </form>
+</div>
+

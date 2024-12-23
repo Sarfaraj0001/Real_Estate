@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Payment_aa";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Associate Advance Payment</h2>
+    <form id="branchForm" class="border p-4 rounded shadow formtag">
+        <!-- Associate ID -->
+        <div class="mb-3">
+            <label for="associateId" class="form-label formLabel">Enter Associate ID:</label>
+            <input type="text" class="form-control formInput" id="associateId" placeholder="Enter Associate ID" required>
+        </div>
+
+        <!-- Select section -->
+        <div class="mb-3">
+            <label for="paymentType" class="form-label formLabel">Select Type:</label>
+            <select class="form-control formInput" id="paymentType" required>
+                <option value="" disabled selected>Select</option>
+                <option value="payment">Payment</option>
+                <option value="receive">Receive</option>
+            </select>
+        </div>
+
+        <!-- Payment Amount with Increment/Decrement -->
+        <div class="mb-3">
+            <label for="paymentAmount" class="form-label formLabel">Enter Amount:</label>
+            <input type="number" class="form-control formInput" id="paymentAmount" step="1" placeholder="Enter Amount" required>
+        </div>
+
+        <!-- Remark -->
+        <div class="mb-3">
+            <label for="remark" class="form-label formLabel">Remark:</label>
+            <input type="text" class="form-control formInput" id="remark" placeholder="Add Remark" required>
+        </div>
+
+        <!-- Date -->
+        <div class="mb-3">
+            <label for="date" class="form-label formLabel">Select Date:</label>
+            <input type="text" class="form-control formInput" id="date" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">View</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Set the current date and time as the placeholder and value
+    window.onload = function () {
+        const dateInput = document.getElementById('date');
+        const currentDate = new Date();
+
+        // Format as per local date and time
+        const formattedDate = currentDate.toLocaleString();
+
+        // Set placeholder and value
+        dateInput.placeholder = formattedDate;
+        dateInput.value = formattedDate; // Optionally prefill the value
+    };
+</script>
+
+

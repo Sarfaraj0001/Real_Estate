@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    @*<link href="~/css/baguetteBox.min.css" rel="stylesheet" />*@
+
+    @*<link href="~/css/baguetteBox.min.css" rel="stylesheet" />*@
+    @*<link href="~/css/bootstrap-grid.css" rel="stylesheet" />*@
+    @*<link href="~/css/bootstrap-grid.min.css" rel="stylesheet" />*@
+    @*<link href="~/css/bootstrap-reboot.css" rel="stylesheet" />*@
+    @*<link href="~/css/bootstrap.css" rel="stylesheet" />*@
+    @*<link href="~/css/calendar.css" rel="stylesheet" />*@
+    @*<link href="~/css/calendar.min.css" rel="stylesheet" />*@
+    @*<link href="~/css/custom.css" rel="stylesheet" />*@
+    @*<link href="~/css/flaticon.css" rel="stylesheet" />*@
+    <link href="~/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    @*<link href="~/css/jquery.fancybox.css" rel="stylesheet" />*@
+    <!-- printing style -->
+    <link href="~/css/main css/formStyle.css" rel="stylesheet" />
+    <!-- printing style -->
+    <link href="~/css/main css/card.css" rel="stylesheet" />
+    @*<link href="~/css/search_bar.css" rel="stylesheet" />*@
+    <!-- printing style -->
+    @*<link href="~/css/main css/printing.css" rel="stylesheet" />*@
+    <!-- index(form) style -->
+    <link href="~/css/main css/index.css" rel="stylesheet" />
+    <!-- site icon -->
+    <link rel="icon" href="~/images/fevicon.png" type="image/png" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <!-- site css -->
+    <link rel="stylesheet" href="~/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="~/css/responsive.css" />
+    <!-- color css -->
+    <link rel="stylesheet" href="~/css/colors.css" />
+    <!-- select bootstrap -->
+    <link rel="stylesheet" href="~/css/bootstrap-select.css" />
+    <!-- scrollbar css -->
+    <link rel="stylesheet" href="~/css/perfect-scrollbar.css" />
+    <!-- custom css -->
+    @*<link rel="stylesheet" href="~/css/custom.css" />*@
+    <!--[if lt IE 9]>
+    <script src="~https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="~https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body class="dashboard dashboard_1">
+    <div class="full_container">
+        <div class="inner_container">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar_blog_1">
+                    <div class="sidebar-header">
+                        <div class="logo_section">
+                            <a href="~/index.html"><img class="logo_icon img-responsive" src="~/images/layout_img/angna homes logo.png" alt="#" /></a>
+                        </div>
+                    </div>
+                    <div class="sidebar_user_info">
+                        <div class="icon_setting"></div>
+                        <div class="user_profle_side">
+                            <div class="user_img"><img class="img-responsive" src="~/images/layout_img/user_img.jpg" alt="#" /></div>
+                            <div class="user_info">
+                                <h6>Manager</h6>
+                                <p><span class="online_animation"></span> Online</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar_blog_2">
+                    <h4>General</h4>
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="~/#dashboard" aria-expanded="false"> <i class="bi bi-house-door fa yellow_color"></i> <span>Home</span></a>
+
+                        </li>
+                        <li><a href="~/Manager/Create"><i class="bi bi-person-plus fa orange_color"></i> <span>Create</span></a></li>
+
+                        <li><a href="~/Manager/Payment"><i class="bi fa bi-credit-card purple_color"></i> <span>Payment</span></a></li>
+                        <li><a href="~/Manager/Printing"><i class="bi fa bi-printer purple_color2"></i> <span>Print</span></a></li>
+                        @*<li><a href="~/#element"><i class="fa-regular fa-address-card blue1_color"></i> <span>Registry</span></a></li>*@
+                        <li><a href="~/Manager/Update"><i class="fa-solid fa-pen-to-square green_color"></i> <span>Update</span></a></li>
+                        <li><a href="~/Manager/Fund_management"><i class="fa-solid fa-pen-to-square green_color"></i> <span>Find Management</span></a></li>
+                        <li><a href="~/Manager/Maturity"> <i class="fa-solid fa-desktop yellow_color"></i> <span>Maturaty</span></a></li>
+                        <li><a href="~/Manager/Field_reports"><i class="fa-regular fa-file-lines yellow_color"></i> <span>Field Reports</span></a></li>
+                        <li><a href="~/Manager/Official_reports"><i class="fa-regular fa-file-lines yellow_color"></i> <span>Official Reports</span></a></li>
+                        @*<li><a href="~/price.html"><i class="fa-solid fa-mobile-screen-button purple_color2"></i> <span>App Setting</span></a></li>*@
+                        @*<li><a href="~/settings.html"><i class="fa fa-cog yellow_color"></i> <span>Settings</span></a></li>*@
+                        @*<li><a href="~/settings.html"><i class="fa-regular fa-trash-can red_color"></i> <span>Delete</span></a></li>*@
+                        <li><a href="~/Manager/Search"><i class="fa-solid fa-magnifying-glass blue1_color"></i> <span>Search</span></a></li>
+                        @*<li><a href="~/charts.html"><i class="fa-solid fa-magnifying-glass blue1_color"></i> <span>Website</span></a></li>*@
+                        <li><a href="~/charts.html"><i class="fa fa-cog red_color"></i> <span>Send Wishes</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end sidebar -->
+            <!-- right content -->
+            <div id="content">
+                <!-- topbar -->
+                <div class="topbar">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="d-flex flex-wrap full align-items-center justify-content-between">
+                            <!-- Sidebar Toggle -->
+                            <button type="button" id="sidebarCollapse" class="sidebar_toggle MarginInTogol">
+                                <i class="fa fa-bars text-white"></i>
+                            </button>
+
+                            <!-- Search Box -->
+                            <div class="logo_section d-flex align-items-center flex-grow-1 justify-content-center">
+                                <form class="d-flex flex-grow-1" role="search">
+                                    <input class="form-control me-2 inp-search" type="search" placeholder="Search..." autocomplete="off">
+                                    <button class="btn btn-search btn-primary ml-1" type="submit">
+                                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- Profile Section -->
+                            <div class="right_topbar">
+                                <div class="icon_info">
+                                    <ul class="user_profile_dd">
+                                        <li class="d-flex align-items-center">
+                                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                                <img class="rounded-circle" src="~/images/layout_img/user_img.jpg" alt="#" />
+                                                <span class="name_user">John David</span>
+                                                @*<i class="fa fa-chevron-down ml-2"></i>*@
+                                            </a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="~/profile.html">My Profile</a>
+                                                <a class="dropdown-item" href="~/settings.html">Settings</a>
+                                                <a class="dropdown-item" href="~/help.html">Help</a>
+                                                <a class="dropdown-item" href="~/#">
+                                                    <span>Log Out</span> <i class="fa fa-sign-out"></i>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- end topbar -->
+                <!-- jQuery -->
+                <script src="~/js/jquery.min.js"></script>
+                <script src="~/js/popper.min.js"></script>
+                <script src="~/js/bootstrap.min.js"></script>
+                <!-- wow anim/ation -->
+                <script src="~/js/animate.js"></script>
+                <!-- select c/ountry -->
+                <script src="~/js/bootstrap-select.js"></script>
+                <!-- owl caro/usel -->
+                <script src="~/js/owl.carousel.js"></script>
+                <!-- chart js -->
+                <script src="~/js/Chart.min.js"></script>
+                <script src="~/js/Chart.bundle.min.js"></script>
+                <script src="~/js/utils.js"></script>
+                <script src="~/js/analyser.js"></script>
+                <!-- nice scrollbar -->
+                <script src="~/js/perfect-scrollbar.min.js"></script>
+                <script>
+                    var ps = new PerfectScrollbar('#sidebar');
+                </script>
+                <!-- custom js -->
+                <script src="~/js/custom.js"></script>
+                <script src="~/js/chart_custom_style1.js"></script>
+                <div>
+                    @RenderBody()
+                </div>
+                <!-- footer -->
+                <div class="container-fluid">
+                    <div class="footer">
+                        <p>
+                            Copyright © 2018 Designed by html.design. All rights reserved.<br><br>
+                            Distributed By: <a href="https://themewagon.com/">ThemeWagon</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

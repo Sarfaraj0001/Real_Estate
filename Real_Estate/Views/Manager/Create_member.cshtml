@@ -1,0 +1,229 @@
+﻿
+@{
+    ViewBag.Title = "Create_member";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Member Form</h2>
+
+    <!-- Form Container -->
+    <form>
+        <div class="row justify-content-between ml-0" style="width:100%;">
+            <!-- First Row: Personal Details & Customer Details -->
+            <div class="column mb-4 " style=" width:49%;">
+
+                <!-- Personal Details Section -->
+                <div id="branchForm" class="p-4 rounded formtag mb-4" style=" height: max-content">
+                    <h4 class="text-center mb-1">Personal Details</h4>
+
+                    <!-- Branch Code -->
+                    <div class="mb-3">
+                        <label for="branchCode" class="form-label formLabel">Branch Code:</label>
+                        <input type="text" class="form-control formInput" id="branchCode" placeholder="Enter Branch Code" required>
+                    </div>
+
+                    <!-- Form Fee -->
+                    <div class="mb-3">
+                        <label for="formFee" class="form-label formLabel">Form Fee:</label>
+                        <input type="text" class="form-control formInput" id="formFee" placeholder="Enter Form Fee" required>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label formLabel">Name:</label>
+                        <input type="text" class="form-control formInput" id="name" placeholder="Enter Name" required>
+                    </div>
+
+                    <!-- Relation -->
+                    <div class="mb-3">
+                        <label for="relation" class="form-label formLabel">Relation:</label>
+                        <div class="d-flex">
+                            <select class="form-control formInput" id="relation" style="width: 25%;" required>
+
+                                <option value="S/O">S/O</option>
+                                <option value="D/O">D/O</option>
+                                <option value="W/O">W/O</option>
+                            </select>
+                            <input type="text" class="form-control formInput ms-2" id="relationName" placeholder="Enter Relation Name" style="width: 100%;" required>
+                        </div>
+                    </div>
+
+                    <!-- Mother Name -->
+                    <div class="mb-3">
+                        <label for="motherName" class="form-label formLabel">Mother Name:</label>
+                        <input type="text" class="form-control formInput" id="motherName" placeholder="Enter Mother Name" required>
+                    </div>
+
+                    <!-- Mobile No -->
+                    <div class="mb-3">
+                        <label for="mobileNo" class="form-label formLabel">Mobile No:</label>
+                        <input type="tel" class="form-control formInput" id="mobileNo" placeholder="Enter Mobile No" required>
+                    </div>
+
+                    <!-- Category -->
+                    <div class="mb-3">
+                        <label for="category" class="form-label formLabel">Category:</label>
+                        <select class="form-control formInput" id="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="General">General</option>
+                            <option value="OBC">OBC</option>
+                            <option value="SC">SC</option>
+                            <option value="ST">ST</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Nationality -->
+                    <div class="mb-3">
+                        <label for="nationality" class="form-label formLabel">Nationality:</label>
+                        <input type="text" class="form-control formInput" id="nationality" value="Indian" readonly>
+                    </div>
+
+                    <!-- Date Of Joining -->
+                    <div class="mb-3">
+                        <label for="joiningDate" class="form-label formLabel">Date Of Joining:</label>
+                        <input type="text" class="form-control formInput" id="joiningDate" readonly>
+                    </div>
+
+                    <!-- Date Of Birth -->
+                    <div class="mb-3">
+                        <label for="dob" class="form-label formLabel">Date Of Birth:</label>
+                        <input type="date" class="form-control formInput" id="dob" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="mb-3">
+                        <label for="gender" class="form-label formLabel">Select Gender:</label>
+                        <select class="form-control formInput" id="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- Second Row: Additional Customer Details -->
+
+                <div id="branchForm" class="p-4 rounded formtag" style=" height: max-content">
+                    <h4 class="text-center mb-1">Bank Details</h4>
+
+                    <!-- PAN No -->
+                    <div class="mb-3">
+                        <label for="panNo" class="form-label formLabel">PAN No:</label>
+                        <input type="text" class="form-control formInput" id="panNo" placeholder="Enter PAN No" required>
+                    </div>
+
+                    <!-- Bank Name -->
+                    <div class="mb-3">
+                        <label for="bankName" class="form-label formLabel">Bank Name:</label>
+                        <input type="text" class="form-control formInput" id="bankName" placeholder="Enter Bank Name" required>
+                    </div>
+
+                    <!-- Bank A/C No -->
+                    <div class="mb-3">
+                        <label for="bankAccountNo" class="form-label formLabel">Bank A/C No:</label>
+                        <input type="number" class="form-control formInput" id="bankAccountNo" placeholder="Enter Bank Account No" required>
+                    </div>
+
+                    <!-- IFSC Code -->
+                    <div class="mb-3">
+                        <label for="ifscCode" class="form-label formLabel">IFSC Code:</label>
+                        <input type="text" class="form-control formInput" id="ifscCode" placeholder="Enter Bank IFSC Code" required>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class="column mb-4 ml-0" style=" width:49%;">
+
+                <!-- Address Details Section -->
+                <div id="branchForm" class="p-4 rounded formtag mb-4" style=" height: max-content">
+                    <h4 class="text-center mb-1">Address</h4>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="address" class="form-label formLabel">Address:</label>
+                        <input type="text" class="form-control formInput" id="address" placeholder="Enter Address" required>
+                    </div>
+
+                    <!-- State -->
+                    <div class="mb-3">
+                        <label for="state" class="form-label formLabel">State:</label>
+                        <input type="text" class="form-control formInput" id="state" placeholder="Enter State" required>
+                    </div>
+
+                    <!-- District -->
+                    <div class="mb-3">
+                        <label for="district" class="form-label formLabel">District:</label>
+                        <input type="text" class="form-control formInput" id="district" placeholder="Enter District" required>
+                    </div>
+
+                    <!-- Pin Code -->
+                    <div class="mb-3">
+                        <label for="pinCode" class="form-label formLabel">Pin Code:</label>
+                        <input type="number" class="form-control formInput" id="pinCode" placeholder="Enter Pin Code" required>
+                    </div>
+                </div>
+
+                <!-- Nominee details -->
+                <div id="branchForm" class="p-4 rounded formtag" style="height: max-content; align-self: flex-start">
+                    <h4 class="text-center mb-1">Nominee Details</h4>
+
+                    <!-- Nominee Name -->
+                    <div class="mb-3">
+                        <label for="nomineeName" class="form-label formLabel">Nominee Name:</label>
+                        <input type="text" class="form-control formInput" id="nomineeName" placeholder="Enter Nominee Name" required>
+                    </div>
+
+                    <!-- Nominee Age -->
+                    <div class="mb-3">
+                        <label for="nomineeAge" class="form-label formLabel">Nominee Age:</label>
+                        <input type="number" class="form-control formInput" id="nomineeAge" placeholder="Enter Nominee Age" required>
+                    </div>
+
+                    <!-- Relationship -->
+                    <div class="mb-3">
+                        <label for="relationship" class="form-label formLabel">Relationship:</label>
+                        <input type="text" class="form-control formInput" id="relationship" placeholder="Enter Relationship" required>
+                    </div>
+
+                    <!-- Same as Member Checkbox -->
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="sameAsMember">
+                        <label for="sameAsMember" class="form-check-label">Same as Member</label>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mb-3">
+                        <label for="nomineeAddress" class="form-label formLabel">Address:</label>
+                        <input type="text" class="form-control formInput" id="nomineeAddress" placeholder="Enter Nominee Address" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Submit Button -->
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-lg formButtom">Submit</button>
+            </div>
+        
+    </form>
+</div>
+
+<script>
+
+    // Function to update live date and time for Date of Joining
+    function updateLiveDateTime() {
+        const joiningDateField = document.getElementById("joiningDate");
+        const now = new Date();
+        joiningDateField.value = now.toLocaleString();
+    }
+
+    // Update live date and time every second
+    setInterval(updateLiveDateTime, 1000);
+</script>
+
+
+
+

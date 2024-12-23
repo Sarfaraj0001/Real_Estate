@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Maturity_laps";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4">Pay Laps Maturity</h2>
+    <!-- Form for Pay Laps Maturity -->
+    <form id="payLapsMaturityForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Customer ID or Name Field -->
+        <div class="mb-3">
+            <label for="customerId" class="form-label formLabel">Customer ID or Name:</label>
+           
+            <input type="text" class="form-control formInput" id="customerId" name="customerId" placeholder="Enter Customer ID or Name" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Search</button>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+}
+
+
+
+<div class="container shado bg-white  mt-5">
+    <!-- Heading -->
+    <div class="w-100  card-heading">
+        <h3 class="text-center  text-white pt-1 pb-1">Payments</h3>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="row cardStyle g-3 justify-content-center">
+        <!-- EMI Payment -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Payment_emipayment" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/money.png" class="imageSize img-fluid" alt="EMI Payment" />
+                    <h6 class="card-title mt-1 mb-0">EMI Payment</h6>
+                </div>
+               
+            </a>
+        </div>
+
+        <!-- Part/CLP/50-50 Payment -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Payment_pcp" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/payment-method.png" class="imageSize img-fluid" alt="Part/CLP/50-50 Payment" />
+                    <h6 class="card-title mt-1 mb-0">Part/CLP/50-50 Payment</h6>
+                </div>
+                
+            </a>
+        </div>
+
+        <!-- Associate Advance -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Payment_aa" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/payment.png" class="imageSize img-fluid" alt="Associate Advance" />
+                    <h6 class="card-title mt-1 mb-0">Associate Advance</h6>
+                </div>
+                
+            </a>
+        </div>
+
+        <!-- Spot Commission -->
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+            <a href="~/Manager/Payment_sc" class="card custom-card text-center h-100">
+                <div class="card-body">
+                    <img src="~/images/logo/commission.png" class="imageSize img-fluid" alt="Spot Commission" />
+                    <h6 class="card-title mt-1 mb-0">Spot Commission</h6>
+                </div>
+                
+            </a>
+        </div>
+    </div>
+</div>
+

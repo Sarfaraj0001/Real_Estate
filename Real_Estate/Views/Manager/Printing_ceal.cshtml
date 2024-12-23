@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Printing_ceal";
+    Layout = "~/Views/Manager_LayoutPage1.cshtml";
+
+}
+
+<div class="container mt-5 FormContainer">
+    <h2 class="text-center mb-4"> Customer Allotment Letter</h2>
+    <form id="branchForm" class="border p-4 rounded shadow formtag">
+
+        <!-- Project Year -->
+        <div class="mb-3">
+            <label for="year" class="form-label formLabel">Customer Id & Name:</label>
+            <input type="text" class="form-control formInput" id="projectyear" placeholder="Customer Id & Name" required>
+        </div>
+
+        <!-- Create Button -->
+        <div class="text-center d-grid gap-2">
+            <button type="submit" class="btn btn-lg formButtom">Get Allotment Letter</button>
+        </div>
+    </form>
+</div>
+
